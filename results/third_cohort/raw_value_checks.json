@@ -1,0 +1,138 @@
+{
+  "scope": "Format-aware follow-up after byte hashes differed; no new patients or response analyses selected.",
+  "biopython_version": "1.86",
+  "documentation": "https://biopython.org/docs/latest/api/Bio.Affy.CelFile.html",
+  "parser_source_sha256": "64598b1a32e5925bc6999c4b5472886ef8610b0f0fec50e43fad9a28f3560c9e",
+  "v4_layout_source": {
+    "url": "https://raw.githubusercontent.com/HenrikBengtsson/affxparser/6fd83fcaca7707c1b198482ae11bc8aeb0e2c0b2/src/fusion/file/CELFileData.cpp",
+    "commit": "6fd83fcaca7707c1b198482ae11bc8aeb0e2c0b2",
+    "sha256": "9a0ffa003475b7dd6cb8c7cd320273cfe3ce8cb1028f472df88d72a4f4ee2d57"
+  },
+  "initial_parser_failure": "Biopython 1.86 v4 reader used an undocumented byte sentinel and failed with unpack requires a buffer of 10 bytes. Kept installed library unchanged; used bounded length-delimited XDA reader from pinned SDK layout.",
+  "pairs": [
+    {
+      "patient_key": "MDACC:M157",
+      "GSM_20194": "GSM505327",
+      "GSM_25055": "GSM615198",
+      "n_cells": 506944,
+      "formats": [
+        3,
+        4
+      ],
+      "v4_header_validation": {
+        "cell_margin": 2,
+        "outliers": 1382,
+        "masks": 0,
+        "subgrids": 0,
+        "data_offset": 573,
+        "full_file_length_accounted": true
+      },
+      "comparison": {
+        "intensities": {
+          "equal_after_float32_conversion": true,
+          "differing_cells": 0,
+          "max_abs_difference": 0.0007812500007275958,
+          "GSE20194_float32_sha256": "c7e488553ba28dc09bdefc013b4fc5e00f5759eab362dd90565c69456355ce2b",
+          "GSE25055_float32_sha256": "c7e488553ba28dc09bdefc013b4fc5e00f5759eab362dd90565c69456355ce2b"
+        },
+        "stdevs": {
+          "equal_after_float32_conversion": true,
+          "differing_cells": 0,
+          "max_abs_difference": 0.00019531250018189894,
+          "GSE20194_float32_sha256": "99e058c227a3c4b3092d6d2cb8dc587e161607503e7020d8953242716fcb08f0",
+          "GSE25055_float32_sha256": "99e058c227a3c4b3092d6d2cb8dc587e161607503e7020d8953242716fcb08f0"
+        },
+        "npix": {
+          "equal_after_float32_conversion": true,
+          "differing_cells": 0,
+          "max_abs_difference": 0.0,
+          "GSE20194_float32_sha256": "fa61255864afe79439ca935d893f5c6692a4d8bc00a2ebd5ae20447d98e6c690",
+          "GSE25055_float32_sha256": "fa61255864afe79439ca935d893f5c6692a4d8bc00a2ebd5ae20447d98e6c690"
+        }
+      }
+    },
+    {
+      "patient_key": "MDACC:M806",
+      "GSM_20194": "GSM505605",
+      "GSM_25055": "GSM615398",
+      "n_cells": 506944,
+      "formats": [
+        3,
+        4
+      ],
+      "v4_header_validation": {
+        "cell_margin": 2,
+        "outliers": 87,
+        "masks": 0,
+        "subgrids": 0,
+        "data_offset": 738,
+        "full_file_length_accounted": true
+      },
+      "comparison": {
+        "intensities": {
+          "equal_after_float32_conversion": true,
+          "differing_cells": 0,
+          "max_abs_difference": 0.0007812500007275958,
+          "GSE20194_float32_sha256": "f7aae1efa262a250e676af85621380c7358195f25e3690d8ff0619836792db5a",
+          "GSE25055_float32_sha256": "f7aae1efa262a250e676af85621380c7358195f25e3690d8ff0619836792db5a"
+        },
+        "stdevs": {
+          "equal_after_float32_conversion": true,
+          "differing_cells": 0,
+          "max_abs_difference": 0.00019531250018189894,
+          "GSE20194_float32_sha256": "db74420ac7c7173736f80587b19b2196fe29809d943372562e5facd767689740",
+          "GSE25055_float32_sha256": "db74420ac7c7173736f80587b19b2196fe29809d943372562e5facd767689740"
+        },
+        "npix": {
+          "equal_after_float32_conversion": true,
+          "differing_cells": 0,
+          "max_abs_difference": 0.0,
+          "GSE20194_float32_sha256": "ffa91e35ab78926aa0b613cb11e5f728c70302e820f6254932c431d0827bbde0",
+          "GSE25055_float32_sha256": "ffa91e35ab78926aa0b613cb11e5f728c70302e820f6254932c431d0827bbde0"
+        }
+      }
+    },
+    {
+      "patient_key": "MDACC:M367",
+      "GSM_20194": "GSM505459",
+      "GSM_25055": "GSM615263",
+      "n_cells": 506944,
+      "formats": [
+        3,
+        4
+      ],
+      "v4_header_validation": {
+        "cell_margin": 2,
+        "outliers": 71,
+        "masks": 0,
+        "subgrids": 0,
+        "data_offset": 738,
+        "full_file_length_accounted": true
+      },
+      "comparison": {
+        "intensities": {
+          "equal_after_float32_conversion": false,
+          "differing_cells": 506681,
+          "max_abs_difference": 42089.7,
+          "GSE20194_float32_sha256": "200597c0d558153dd5c11b5857c4df3c63d9c8d09ec119114821ac6972762211",
+          "GSE25055_float32_sha256": "159aae80c2921a57476d6af3ce5e871c1fcf7d708805fc456a6b18d04df163eb"
+        },
+        "stdevs": {
+          "equal_after_float32_conversion": false,
+          "differing_cells": 506231,
+          "max_abs_difference": 21415.299609375,
+          "GSE20194_float32_sha256": "63363f409a733edc72a010f6890468cd3977d360f142c5713fb313bb5009cb49",
+          "GSE25055_float32_sha256": "6cb98e80835317438abec3b184eba16c9b5d992c0e130dceb92b51d7136fc620"
+        },
+        "npix": {
+          "equal_after_float32_conversion": false,
+          "differing_cells": 242741,
+          "max_abs_difference": 11.0,
+          "GSE20194_float32_sha256": "dd353a7cd10784b9157b0cf07481f23446a2e69cefee04c1a089ac1598a1c2db",
+          "GSE25055_float32_sha256": "74d9a37c8b5410a6888b927956b82a4dc3fb3018a3e1debc95740a22ffa5c0f6"
+        }
+      }
+    }
+  ],
+  "limits": "Compares intensity, standard deviation and pixel count only. Mask/outlier coordinate contents not compared. Three selected pairs only; v4 full byte length accounted for."
+}

@@ -1,0 +1,99 @@
+{
+  "date": "2026-09-26",
+  "scope": "Saved DIPK prediction recalculation with exact GSM joins; no model training/inference.",
+  "score": "Negative saved predicted LN IC50, fixed from source figure axis and verified against published figure CSV to 5.1e-10.",
+  "identity_checks": {
+    "all_310_GSM_unique_and_equal": true,
+    "all_310_archive_labels_equal_DLDA30": true,
+    "paired_known": 306,
+    "label_disagreements": 90
+  },
+  "original_310_provided_labels": {
+    "n": 310,
+    "pcr": 122,
+    "RD": 188,
+    "auc": 0.8521538193233344,
+    "mean_difference": 0.26480714041761777,
+    "welch_p": 5.159840179300866e-29
+  },
+  "same_306_stored_DLDA30": {
+    "n": 306,
+    "pcr": 121,
+    "RD": 185,
+    "auc": 0.851731069912888,
+    "mean_difference": 0.26527466620082496,
+    "welch_p": 1.1842030092929334e-28
+  },
+  "same_306_observed_pathology": {
+    "n": 306,
+    "pcr": 57,
+    "RD": 249,
+    "auc": 0.7484675544282393,
+    "mean_difference": 0.2023856405777451,
+    "welch_p": 7.960382958582525e-09
+  },
+  "bootstrap": {
+    "seed": 20260926,
+    "requested": 2000,
+    "valid": 2000,
+    "missing_class_draws": 0,
+    "percentile_95": {
+      "auc_DLDA30": [
+        0.8059632975867203,
+        0.8944185082241369
+      ],
+      "auc_observed": [
+        0.6746538159922786,
+        0.8163600872723688
+      ],
+      "auc_delta_observed_minus_DLDA30": [
+        -0.18075699554481411,
+        -0.029915568437558705
+      ],
+      "mean_difference_DLDA30": [
+        0.22477038712599487,
+        0.30617122913318845
+      ],
+      "mean_difference_observed": [
+        0.1397799491526283,
+        0.2619904349419991
+      ],
+      "mean_difference_delta": [
+        -0.12229373577157457,
+        -0.005672247191111568
+      ]
+    }
+  },
+  "auc_delta": -0.10326351548464874,
+  "GSE32646_control": {
+    "n": 115,
+    "archive_labels_match_observed": true,
+    "pcr": 27,
+    "RD": 88,
+    "auc": 0.7605218855218855,
+    "mean_difference": 0.303923613896675,
+    "welch_p": 5.682868777447697e-05
+  },
+  "limits": [
+    "Evaluation conditional on fixed saved predictions; bootstrap excludes training uncertainty.",
+    "GSE25055 received taxane-anthracycline therapy; not isolated paclitaxel efficacy or a treatment recommendation.",
+    "GSE32646 checks outcome provenance in another cohort, not independent reproduction of the GSE25055 correction.",
+    "DIPK figure agreement and archive metadata do not recover the complete historical model-training run."
+  ],
+  "input_hashes": {
+    "method_screen/DIPK/archive_clinical/Task5/DataPreprocess/GEO/1/GSE25055.csv": "6a22103d8c3bec970b86708bf773609aad5776612324d2a43d184733e1a7366f",
+    "method_screen/DIPK/archive_clinical/Task5/DataPreprocess/GEO/2/GSE32646.csv": "159919e874999307243c52841d1bfa3333ac978f5c46cecc9dab0d342c0750d0",
+    "method_screen/DIPK/archive_clinical/Task5/DataPreprocess/GEO/3/GSE20194.csv": "d303ad716b9df1079e4de1c1a5cf70d2519751b238d7b674451fdb3fc3b5d261",
+    "method_screen/DIPK/archive_clinical/Task5/test_geo01/predict_pCR.csv": "23f2246738dc50854bc806deb03a4217d455343e289ec422e8153850a72819e5",
+    "method_screen/DIPK/archive_clinical/Task5/test_geo01/predict_RD.csv": "57f4612c845607df2518469fba2c6632356b816cbf2a3ba127c642369ab6708c",
+    "method_screen/DIPK/archive_clinical/Task5/test_geo02/predict_pCR.csv": "70682f34621e0858c54ead1a91f5f422ce90be5ba6c15a198ef4482b32ad8b0c",
+    "method_screen/DIPK/archive_clinical/Task5/test_geo02/predict_RD.csv": "bdc34d74e2463be6b099643173fe9bad7739da224c489f2b1c6d0e494b147d6e",
+    "method_screen/DIPK/archive_clinical/Task5/test_geo03/predict_pCR.csv": "4b83bbe30089f54ea9d05da455e984b147c28f02b2529fcded1279a30e589c95",
+    "method_screen/DIPK/archive_clinical/Task5/test_geo03/predict_RD.csv": "07e2646cee3429eb054ec47251fc67deb65cfd94d09a6222142139d9f46481d3"
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  }
+}

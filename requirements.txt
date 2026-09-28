@@ -1,0 +1,9 @@
+# Direct dependencies in the verified existing project environment, Python 3.12.14.
+# This is not a complete transitive environment lock or evidence of a clean install.
+biopython==1.86
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.7.2
+matplotlib==3.11.2
+xlrd==2.0.2

@@ -36,3 +36,7 @@ python scripts/reproduce_processed.py --output processed_check.json
 This checks the supplied estimates and saved bootstrap intervals. It does not rerun the upstream audit or generate new bootstrap samples.
 
 For the complete saved-prediction analysis and figure generation, follow [run_commands.md](run_commands.md). This also requires the listed upstream files and base R (tested with R 4.5.2).
+
+## License
+
+Original code is licensed under the [MIT License](LICENSE). Original results and figures are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Third-party data and materials retain their original terms.

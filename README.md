@@ -1,6 +1,6 @@
 # DIPK and TIL-30 clinical-evaluation reanalysis
 
-Code and processed data for *Outcome labels and patient reuse in clinical validation: reanalyses of breast-cancer evaluations of two response predictors* (Yunhao Jiang).
+Code and processed data for *Outcome labels and patient reuse in clinical validation: reanalyses of the DIPK and TIL-30 breast-cancer evaluations* (Yunhao Jiang).
 
 - `results/`: estimates, processed inputs and bootstrap/permutation draws.
 - `scripts/`: analysis code. `scripts/fetch_inputs.py` downloads third-party inputs and checks their SHA256.

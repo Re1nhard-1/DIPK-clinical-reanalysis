@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-09-26T12:22:19.265174+00:00",
+  "input_hashes": {
+    "GSE20194_metadata.csv": "5a2fcf0105a57de299568e33982e02c3467b0b6199d79add05b6f86d2a494f5f",
+    "GSE25055_metadata.csv": "4e3e7dc9083141599269e8b2e3cdd27a3d259a6bffd72dd3866e32e1e413245b",
+    "GSE32646_metadata.csv": "9b639da13ece24ad676d6ac8f888beaa876b46b74ed4e91365e51628bb7d60b6",
+    "GSE20194_matrix_header.txt": "998acc6ca9aa469a8944120c04d67bbc5d5cb54ba3c265f2600e286b075af8da",
+    "GSE20194_MDACC_Sample_Info.xls": "b2856a760f308e52812edc70d307f2064437077de4f94310389ccfa5ebe41916",
+    "GSE20194_MDACC_Sample_Info.xls.gz": "d489e24a8c38f80e9c4f7e55ec82f824c771f28ac59978c9523d8728dac1ec13",
+    "method_screen/DIPK/archive_clinical/Task5/DataPreprocess/GEO/3/GSE20194.csv": "d303ad716b9df1079e4de1c1a5cf70d2519751b238d7b674451fdb3fc3b5d261",
+    "method_screen/DIPK/archive_clinical/Task5/test_geo03/predict_pCR.csv": "4b83bbe30089f54ea9d05da455e984b147c28f02b2529fcded1279a30e589c95",
+    "method_screen/DIPK/archive_clinical/Task5/test_geo03/predict_RD.csv": "07e2646cee3429eb054ec47251fc67deb65cfd94d09a6222142139d9f46481d3"
+  },
+  "workbook_to_GEO_filename_formatting": {
+    "FL786 642.CEL": "FL786_642.CEL",
+    "FL1141-801(2).CEL": "FL1141-801_2_.CEL"
+  },
+  "rows": 278,
+  "all_archive_labels_match_observed": true,
+  "provided_pcr": 56,
+  "source_patient_groups": 248,
+  "patient_pcr": 50,
+  "array_multiplicities": {
+    "1": 218,
+    "2": 30
+  },
+  "maqc_status_counts": {
+    "MAQC_T": 130,
+    "MAQC_V": 100,
+    "MDA_R": 29,
+    "MAQC_Q": 19
+  },
+  "no_within_patient_response_disagreement": true,
+  "cross_series": {
+    "GSM_overlap": 0,
+    "shared_patient_aliases": 188,
+    "linked_GSE20194_arrays": 199,
+    "shared_raw_basenames": 187,
+    "unmatched_GSE20194_patient_groups": 60,
+    "response_disagreements_arrays": 0,
+    "response_disagreements_patient_groups": 0,
+    "age_difference_counts": {
+      "0.0": 171,
+      "1.0": 21,
+      "2.0": 3,
+      "-10.0": 2,
+      "5.0": 1,
+      "-1.0": 1
+    },
+    "ER_IHC_disagreement_arrays": 1,
+    "GSE32646_GSM_overlap": 0,
+    "GSE32646_raw_basename_overlap": 0
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "xlrd": "2.0.2"
+  },
+  "script_sha256": "37f40cbe2927696d4776732f4c8c19d378d9d65c00c8dba5a13e3575ebdd1f87"
+}

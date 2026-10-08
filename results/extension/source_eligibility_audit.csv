@@ -1,0 +1,3 @@
+source,total_records,primary_known_outcomes,primary_pcr,clinical_eligible,clinical_pcr,pr_missing,her2_missing,grade_missing,her2_positive
+MDACC,227,227,43,227,43,0,0,0,0
+ISPY,83,79,14,74,13,1,11,20,3

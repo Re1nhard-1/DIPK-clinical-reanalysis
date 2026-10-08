@@ -1,0 +1,161 @@
+{
+  "completed_utc": "2026-09-30T08:19:50.967775+00:00",
+  "seed": 202609304,
+  "draws": 5000,
+  "counts": {
+    "all": {
+      "n": 181,
+      "pathology_pcr": 42,
+      "proxy_pcr": 69,
+      "label_disagreements": 65,
+      "source_counts": {
+        "MDACC": 71,
+        "LBJ/IN/GEI": 56,
+        "USO": 54
+      }
+    },
+    "without_RPS_flags": {
+      "n": 153,
+      "pathology_pcr": 36,
+      "proxy_pcr": 59,
+      "label_disagreements": 55,
+      "source_counts": {
+        "MDACC": 71,
+        "USO": 47,
+        "LBJ/IN/GEI": 35
+      }
+    }
+  },
+  "estimates": {
+    "all.auc.pathology": {
+      "estimate": 0.7475162726961289,
+      "ci_low": 0.6614281826223039,
+      "ci_high": 0.8265775241973872,
+      "valid_draws": 5000
+    },
+    "all.ap.pathology": {
+      "estimate": 0.5011728042097987,
+      "ci_low": 0.3598093230995885,
+      "ci_high": 0.643507101160576,
+      "valid_draws": 5000
+    },
+    "all.auc.proxy": {
+      "estimate": 0.7862318840579711,
+      "ci_low": 0.7136411435191924,
+      "ci_high": 0.8527954177376936,
+      "valid_draws": 5000
+    },
+    "all.ap.proxy": {
+      "estimate": 0.7405262907202789,
+      "ci_low": 0.6382404735730648,
+      "ci_high": 0.832798429628192,
+      "valid_draws": 5000
+    },
+    "all.auc.pathology_minus_proxy": {
+      "estimate": -0.038715611361842206,
+      "ci_low": -0.14477024810382597,
+      "ci_high": 0.06674189107276585,
+      "valid_draws": 5000
+    },
+    "all.ap.pathology_minus_proxy": {
+      "estimate": -0.23935348651048016,
+      "ci_low": -0.3865450546675079,
+      "ci_high": -0.09354536942750805,
+      "valid_draws": 5000
+    },
+    "without_RPS_flags.auc.pathology": {
+      "estimate": 0.7528490028490028,
+      "ci_low": 0.6598974199552533,
+      "ci_high": 0.8352158882641073,
+      "valid_draws": 5000
+    },
+    "without_RPS_flags.ap.pathology": {
+      "estimate": 0.508125064802907,
+      "ci_low": 0.3557030672186937,
+      "ci_high": 0.6640160709126378,
+      "valid_draws": 5000
+    },
+    "without_RPS_flags.auc.proxy": {
+      "estimate": 0.8173458348359178,
+      "ci_low": 0.7455094724395064,
+      "ci_high": 0.8811845005714964,
+      "valid_draws": 5000
+    },
+    "without_RPS_flags.ap.proxy": {
+      "estimate": 0.7873733873947404,
+      "ci_low": 0.692803196968657,
+      "ci_high": 0.866035861860913,
+      "valid_draws": 5000
+    },
+    "without_RPS_flags.auc.pathology_minus_proxy": {
+      "estimate": -0.06449683198691503,
+      "ci_low": -0.17545971929939974,
+      "ci_high": 0.03855453180463036,
+      "valid_draws": 5000
+    },
+    "without_RPS_flags.ap.pathology_minus_proxy": {
+      "estimate": -0.2792483225918334,
+      "ci_low": -0.4434395074257,
+      "ci_high": -0.11228744518064478,
+      "valid_draws": 5000
+    }
+  },
+  "missing_score_auc_rank_bounds": {
+    "pathology": {
+      "min": 0.7421768707482993,
+      "max": 0.7493197278911564
+    },
+    "proxy": {
+      "min": 0.7792740797742721,
+      "max": 0.788123637296396
+    },
+    "pathology_minus_proxy": {
+      "min": -0.03897397743245057,
+      "max": -0.03688814117413031
+    }
+  },
+  "missing_score_rank_positions": 363,
+  "input_sha256": {
+    "method_screen\\SYLVER\\hatzis2_released_scores.csv": "8a926c7c823eeb0c4fcadb3e61277c7193a62ba355d2854725f97429bbab96e9",
+    "method_screen\\SYLVER\\source_figure4.xlsx": "63484d3a3e9f0b7f31e9d8183775b4cd7100520804c7711b1228e1b2bc89868f",
+    "method_screen\\SYLVER\\source_index.json": "d2bf3c38c6bec009602df1c641ee679304def6c5e1334a053f5049fb80b5c50d",
+    "check_sylver_second_cohort.py": "60d483a80ffea494a8e2b59f2aeac7b3f4328836f58d1777d39acd488a20879d",
+    "check_dipk_sylver_comparison.py": "30fa9475cd5e86a56ba2ea5351eea61ffd1da79815a8353828b21796c4184d53"
+  },
+  "protected_sha256": {
+    "method_screen\\DIPK\\GSE25055_fixed_prediction_crosswalk.csv": "d769210ea5d2be25d840ceea5b667abf4e0fb4a37712cee7c012146245b58c10",
+    "method_screen\\DIPK\\sensitivity\\analysis_input.csv": "1cf667165bb726fcd43beb7909f055b910be599c87e1a68f74c78a177027c276",
+    "method_screen\\DIPK\\third_cohort\\GSE20194_verified_array_crosswalk.csv": "3e2aa214a2cc7fe9eaf102de930d5e37ebec431268e3ab1d06f1cf0c099fa115",
+    "method_screen\\DIPK\\extension\\sylver_comparison_results.json": "ec47ff9fd100e1f3bffa07d96d50c68d27fb19f49361416c64a1326588d6121d",
+    "method_screen\\DIPK\\extension\\sylver_comparison_input.csv": "be62aa6488352dab3e445fc8690695a58345d90975c0fa98c87d0ff39b09077c",
+    "method_screen\\DIPK\\extension\\sylver_comparison_bootstrap.csv": "f6b5623848e31873561e3504483d4ba289d7fd72561b375d375715b405247d01",
+    "method_screen\\DIPK\\extension\\DIPK_incremental_prediction.png": "96f81f98f746dfc1c9ed6567811d471e25570b6b93185b89d39463bc7116821c",
+    "method_screen\\DIPK\\extension\\DIPK_label_extended.png": "08352d1fe3196b3d141f48b5e8483c48f6423909112ac74381915def366c376a",
+    "method_screen\\DIPK\\extension\\DIPK_patient_identity.png": "15125ecfd3969c8cba5cfac87ef0f79b5896c71453a59585b5ea257a8de81c8a",
+    "method_screen\\DIPK\\extension\\DIPK_proxy_alignment.png": "43d681f89c0133c2348192c56fefa37dcb20f1a204369c84e8cd99454c6b4086",
+    "method_screen\\DIPK\\extension\\DIPK_subtype_prediction.png": "bc30bf6e5db0c96f6c457c9568a1c124d135f10a3d0465b1ce2945d3554a15a8",
+    "method_screen\\DIPK\\extension\\DIPK_transport.png": "e46677911b6b5c7963387ea53b1813c3a8090d752de24f7db4b307aa15b15f8f",
+    "method_screen\\DIPK\\extension\\DIPK_unit_uncertainty.png": "9c36825c48e1e5645a0bd03efbc44ecaf2622a5ac85dfb1de59d931c1a88a437",
+    "method_screen\\DIPK\\sensitivity\\DIPK_background_sensitivity.png": "98384afaca8b65848fa66bfa3419314a59f46a700c8a300a0d75f9c5d22dcb9b"
+  },
+  "numerical_verification": {
+    "checks": 72,
+    "max_error": 3.3306690738754696e-16,
+    "bootstrap_draw_indices_checked": [
+      0,
+      1,
+      99,
+      999,
+      4999
+    ],
+    "undefined_draws": 0,
+    "workbook_XML_independent_reader_rows": 181,
+    "original_scores_labels_receptors_exact": true
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "sklearn": "1.7.2"
+  }
+}

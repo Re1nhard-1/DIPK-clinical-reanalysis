@@ -1,0 +1,406 @@
+{
+  "seed": 202609303,
+  "bootstrap_draws": 5000,
+  "identity": {
+    "source_rows": 306,
+    "matched_patients": 306,
+    "unmatched_source_rows": 0,
+    "source_pathology_agreement": 306,
+    "source_proxy_agreement": 216,
+    "omitted_geo_records": [
+      {
+        "GSM": "GSM615105",
+        "sample id": "1035",
+        "pathologic_response_pcr_rd": "NA"
+      },
+      {
+        "GSM": "GSM615118",
+        "sample id": "1064",
+        "pathologic_response_pcr_rd": "NA"
+      },
+      {
+        "GSM": "GSM615119",
+        "sample id": "1067",
+        "pathologic_response_pcr_rd": "NA"
+      },
+      {
+        "GSM": "GSM615163",
+        "sample id": "1205",
+        "pathologic_response_pcr_rd": "NA"
+      }
+    ]
+  },
+  "counts": {
+    "all": {
+      "n": 306,
+      "pathology_pcr": 57,
+      "proxy_pcr": 121,
+      "discordance": 90
+    },
+    "MDACC": {
+      "n": 227,
+      "pathology_pcr": 43,
+      "proxy_pcr": 87,
+      "discordance": 62
+    },
+    "ISPY": {
+      "n": 79,
+      "pathology_pcr": 14,
+      "proxy_pcr": 34,
+      "discordance": 28
+    }
+  },
+  "estimates": {
+    "all.auc.DIPK.pathology": {
+      "estimate": 0.7484675544282393,
+      "ci95": [
+        0.674916087605341,
+        0.8184487859703966
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "all.ap.DIPK.pathology": {
+      "estimate": 0.4684490438756082,
+      "ci95": [
+        0.34707607916357414,
+        0.6017790412935893
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "all.auc.SLMHRD.pathology": {
+      "estimate": 0.7576974564926372,
+      "ci95": [
+        0.6825958468072787,
+        0.8264301200154858
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "all.ap.SLMHRD.pathology": {
+      "estimate": 0.4304395277674218,
+      "ci95": [
+        0.3194599465558806,
+        0.58080915246883
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "all.auc.DIPK.proxy": {
+      "estimate": 0.851731069912888,
+      "ci95": [
+        0.8065820092685765,
+        0.8919696548289304
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "all.ap.DIPK.proxy": {
+      "estimate": 0.7983505623760843,
+      "ci95": [
+        0.725682336657977,
+        0.8636668619776309
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "all.auc.SLMHRD.proxy": {
+      "estimate": 0.8542774179137815,
+      "ci95": [
+        0.8106990185778065,
+        0.8942622993248716
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "all.ap.SLMHRD.proxy": {
+      "estimate": 0.8001661723948427,
+      "ci95": [
+        0.7283772118972464,
+        0.8635084808375275
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "all.auc.DIPK.pathology_minus_proxy": {
+      "estimate": -0.10326351548464874,
+      "ci95": [
+        -0.17948553331993125,
+        -0.02914152420677808
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "all.auc.SLMHRD.pathology_minus_proxy": {
+      "estimate": -0.09657996142114433,
+      "ci95": [
+        -0.17680238992720287,
+        -0.02110623129523466
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "all.auc.DIPK_minus_SLMHRD.pathology": {
+      "estimate": -0.009229902064397888,
+      "ci95": [
+        -0.07139088630845274,
+        0.05513156042168216
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "all.auc.DIPK_minus_SLMHRD.proxy": {
+      "estimate": -0.0025463480008934836,
+      "ci95": [
+        -0.04623658845463822,
+        0.039669610107716614
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "all.auc.proxy_relative_advantage_change": {
+      "estimate": 0.006683554063504404,
+      "ci95": [
+        -0.060037553916626775,
+        0.0681044037385525
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "all.ap.DIPK.pathology_minus_proxy": {
+      "estimate": -0.32990151850047605,
+      "ci95": [
+        -0.46352585789158923,
+        -0.18787351438268612
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "all.ap.SLMHRD.pathology_minus_proxy": {
+      "estimate": -0.3697266446274209,
+      "ci95": [
+        -0.4938634610911211,
+        -0.20840420648372465
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "all.ap.DIPK_minus_SLMHRD.pathology": {
+      "estimate": 0.038009516108186425,
+      "ci95": [
+        -0.08251386097862384,
+        0.14534703301108892
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "all.ap.DIPK_minus_SLMHRD.proxy": {
+      "estimate": -0.0018156100187584068,
+      "ci95": [
+        -0.059847167079507574,
+        0.05288039241635375
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "all.ap.proxy_relative_advantage_change": {
+      "estimate": -0.03982512612694483,
+      "ci95": [
+        -0.15274727274948507,
+        0.09215791169333162
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "MDACC.auc.DIPK.pathology": {
+      "estimate": 0.7711071789686552,
+      "ci95": [
+        0.6910677726333844,
+        0.8475936301613354
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "MDACC.auc.SLMHRD.pathology": {
+      "estimate": 0.7794489383215369,
+      "ci95": [
+        0.6925466836537223,
+        0.8585099582452523
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "MDACC.auc.DIPK.proxy": {
+      "estimate": 0.8472906403940886,
+      "ci95": [
+        0.793490462472316,
+        0.8954649908743986
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "MDACC.auc.SLMHRD.proxy": {
+      "estimate": 0.850328407224959,
+      "ci95": [
+        0.7984718914219958,
+        0.8971447865066914
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "MDACC.auc.DIPK.pathology_minus_proxy": {
+      "estimate": -0.07618346142543342,
+      "ci95": [
+        -0.15910714975906334,
+        0.004350948546120346
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "MDACC.auc.SLMHRD.pathology_minus_proxy": {
+      "estimate": -0.070879468903422,
+      "ci95": [
+        -0.16214510167197232,
+        0.0164046066816313
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "MDACC.auc.DIPK_minus_SLMHRD.pathology": {
+      "estimate": -0.008341759352881728,
+      "ci95": [
+        -0.08763560386256186,
+        0.07199157175247643
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "MDACC.auc.DIPK_minus_SLMHRD.proxy": {
+      "estimate": -0.0030377668308703143,
+      "ci95": [
+        -0.057322362219698886,
+        0.04992156301949226
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "MDACC.auc.proxy_relative_advantage_change": {
+      "estimate": 0.005303992522011414,
+      "ci95": [
+        -0.07527756559634281,
+        0.08210644053348962
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "ISPY.auc.DIPK.pathology": {
+      "estimate": 0.6681318681318681,
+      "ci95": [
+        0.4843548268779343,
+        0.8322677477994642
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "ISPY.auc.SLMHRD.pathology": {
+      "estimate": 0.6967032967032967,
+      "ci95": [
+        0.5323406862745098,
+        0.8401780177794386
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "ISPY.auc.DIPK.proxy": {
+      "estimate": 0.8725490196078431,
+      "ci95": [
+        0.7848154461988482,
+        0.9427360850531582
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "ISPY.auc.SLMHRD.proxy": {
+      "estimate": 0.8823529411764706,
+      "ci95": [
+        0.7970584282099937,
+        0.9535802395332108
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "ISPY.auc.DIPK.pathology_minus_proxy": {
+      "estimate": -0.20441715147597506,
+      "ci95": [
+        -0.40140792972777056,
+        -0.026560183468670534
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "ISPY.auc.SLMHRD.pathology_minus_proxy": {
+      "estimate": -0.1856496444731739,
+      "ci95": [
+        -0.37840913658211595,
+        -0.011356946161294021
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "ISPY.auc.DIPK_minus_SLMHRD.pathology": {
+      "estimate": -0.02857142857142858,
+      "ci95": [
+        -0.13127875778065842,
+        0.06667748917748911
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "ISPY.auc.DIPK_minus_SLMHRD.proxy": {
+      "estimate": -0.009803921568627416,
+      "ci95": [
+        -0.07354942753332216,
+        0.05168771777003481
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    },
+    "ISPY.auc.proxy_relative_advantage_change": {
+      "estimate": 0.018767507002801165,
+      "ci95": [
+        -0.07489085893293851,
+        0.11660697901007963
+      ],
+      "valid_draws": 5000,
+      "undefined_draws": 0
+    }
+  },
+  "verification": {
+    "standard_and_direct_pair_comparisons": 108,
+    "max_abs_metric_error": 2.220446049250313e-16,
+    "explicit_duplicate_patient_bootstrap_draws_checked": [
+      0,
+      1,
+      2,
+      999,
+      4999
+    ],
+    "frozen_inputs_unchanged": true,
+    "source_inputs_and_plan_unchanged": true
+  },
+  "input_sha256": {
+    "GSE25055_metadata.csv": "4e3e7dc9083141599269e8b2e3cdd27a3d259a6bffd72dd3866e32e1e413245b",
+    "method_screen\\DIPK\\GSE25055_fixed_prediction_crosswalk.csv": "d769210ea5d2be25d840ceea5b667abf4e0fb4a37712cee7c012146245b58c10",
+    "method_screen\\SYLVER\\source_figure4.xlsx": "63484d3a3e9f0b7f31e9d8183775b4cd7100520804c7711b1228e1b2bc89868f",
+    "method_screen\\SYLVER\\hatzis1_released_scores.csv": "024b8e7bdeedfbb318a66efa0636dedec5a1cd9a06e04faf9c5675b3fa5a0e9e"
+  },
+  "code_sha256": "30fa9475cd5e86a56ba2ea5351eea61ffd1da79815a8353828b21796c4184d53",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "sklearn": "1.7.2"
+  }
+}

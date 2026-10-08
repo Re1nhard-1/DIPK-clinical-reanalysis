@@ -1,0 +1,269 @@
+{
+  "completed_utc": "2026-09-29T23:53:30.589587+00:00",
+  "seed": 202609300,
+  "draws_per_scheme": 10000,
+  "plan_recorded_before_effect_calculation": true,
+  "input_hashes": {
+    "method_screen\\DIPK\\extension\\source_label_input.csv": "e8a26bd3b93012f27534b28d05a79544d01df0bd06c22563cad90a125b0cb766",
+    "method_screen\\DIPK\\GSE25055_fixed_prediction_crosswalk.csv": "d769210ea5d2be25d840ceea5b667abf4e0fb4a37712cee7c012146245b58c10"
+  },
+  "script_sha256": "6de9f179c660c72846a07e9ae14acf62900d0e9367b912c803258de665ab3de8",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "sklearn": "1.7.2"
+  },
+  "points": {
+    "observed_outcome": 0.7484675544282393,
+    "archived_proxy": 0.851731069912888
+  },
+  "class_conditional_identity": {
+    "ppv": 0.36363636363636365,
+    "false_omission_rate": 0.07027027027027027,
+    "expected_auc": 0.5728919557708397
+  },
+  "permutation_summaries": [
+    {
+      "scheme": "outcome",
+      "n_strata": 2,
+      "draws": 10000,
+      "expected_auc": 0.5728919557708398,
+      "permutation_mean": 0.5734196604869332,
+      "monte_carlo_mean_se": 0.00029613976116133573,
+      "reference_low": 0.5152077283895465,
+      "reference_high": 0.6316774625865534,
+      "observed_proxy_auc": 0.851731069912888,
+      "observed_minus_reference_mean": 0.2788391141420482,
+      "exceedances": 0,
+      "plus_one_upper_tail_fraction": 9.999000099990002e-05
+    },
+    {
+      "scheme": "outcome_source",
+      "n_strata": 4,
+      "draws": 10000,
+      "expected_auc": 0.5752803033899643,
+      "permutation_mean": 0.5746623319186956,
+      "monte_carlo_mean_se": 0.00029596338971711383,
+      "reference_low": 0.5165054724145633,
+      "reference_high": 0.632969622515077,
+      "observed_proxy_auc": 0.851731069912888,
+      "observed_minus_reference_mean": 0.2764507665229238,
+      "exceedances": 0,
+      "plus_one_upper_tail_fraction": 9.999000099990002e-05
+    }
+  ],
+  "conditional_aucs": [
+    {
+      "fixed_field": "y",
+      "fixed_value": 0,
+      "target": "z",
+      "n": 249,
+      "positive": 77,
+      "negative": 172,
+      "auc": 0.8563877982482634
+    },
+    {
+      "fixed_field": "y",
+      "fixed_value": 1,
+      "target": "z",
+      "n": 57,
+      "positive": 44,
+      "negative": 13,
+      "auc": 0.6783216783216783
+    },
+    {
+      "fixed_field": "y_and_source",
+      "target": "z",
+      "n": 306,
+      "eligible_pairs": 8273,
+      "auc": 0.8427414480841291,
+      "strata": [
+        {
+          "fixed_value": 0,
+          "source": "ISPY",
+          "n": 65,
+          "pairs": 984,
+          "auc": 0.9014227642276422
+        },
+        {
+          "fixed_value": 0,
+          "source": "MDACC",
+          "n": 184,
+          "pairs": 6943,
+          "auc": 0.8425752556531758
+        },
+        {
+          "fixed_value": 1,
+          "source": "ISPY",
+          "n": 14,
+          "pairs": 40,
+          "auc": 0.65
+        },
+        {
+          "fixed_value": 1,
+          "source": "MDACC",
+          "n": 43,
+          "pairs": 306,
+          "auc": 0.6830065359477124
+        }
+      ]
+    },
+    {
+      "fixed_field": "z",
+      "fixed_value": 0,
+      "target": "y",
+      "n": 185,
+      "positive": 13,
+      "negative": 172,
+      "auc": 0.7030411449016101
+    },
+    {
+      "fixed_field": "z",
+      "fixed_value": 1,
+      "target": "y",
+      "n": 121,
+      "positive": 44,
+      "negative": 77,
+      "auc": 0.5814639905548996
+    },
+    {
+      "fixed_field": "z_and_source",
+      "target": "y",
+      "n": 306,
+      "eligible_pairs": 3385,
+      "auc": 0.640768094534712,
+      "strata": [
+        {
+          "fixed_value": 0,
+          "source": "ISPY",
+          "n": 45,
+          "pairs": 164,
+          "auc": 0.5975609756097561
+        },
+        {
+          "fixed_value": 0,
+          "source": "MDACC",
+          "n": 140,
+          "pairs": 1179,
+          "auc": 0.7362171331636981
+        },
+        {
+          "fixed_value": 1,
+          "source": "ISPY",
+          "n": 34,
+          "pairs": 240,
+          "auc": 0.5
+        },
+        {
+          "fixed_value": 1,
+          "source": "MDACC",
+          "n": 87,
+          "pairs": 1802,
+          "auc": 0.6009988901220865
+        }
+      ]
+    }
+  ],
+  "pair_decomposition": [
+    {
+      "target": "observed_outcome",
+      "positive_y": 1,
+      "positive_z": 0,
+      "negative_y": 0,
+      "negative_z": 0,
+      "pairs": 2236,
+      "pair_weight": 0.15754245050376947,
+      "block_auc": 0.7030411449016101,
+      "weighted_contribution": 0.11075882477277531
+    },
+    {
+      "target": "observed_outcome",
+      "positive_y": 1,
+      "positive_z": 0,
+      "negative_y": 0,
+      "negative_z": 1,
+      "pairs": 1001,
+      "pair_weight": 0.07052772493482702,
+      "block_auc": 0.3726273726273726,
+      "weighted_contribution": 0.02628056083985063
+    },
+    {
+      "target": "observed_outcome",
+      "positive_y": 1,
+      "positive_z": 1,
+      "negative_y": 0,
+      "negative_z": 0,
+      "pairs": 7568,
+      "pair_weight": 0.5332206017050659,
+      "block_auc": 0.8863636363636364,
+      "weighted_contribution": 0.4726273515113084
+    },
+    {
+      "target": "observed_outcome",
+      "positive_y": 1,
+      "positive_z": 1,
+      "negative_y": 0,
+      "negative_z": 1,
+      "pairs": 3388,
+      "pair_weight": 0.23870922285633764,
+      "block_auc": 0.5814639905548996,
+      "weighted_contribution": 0.13880081730430494
+    },
+    {
+      "target": "archived_proxy",
+      "positive_y": 0,
+      "positive_z": 1,
+      "negative_y": 0,
+      "negative_z": 0,
+      "pairs": 13244,
+      "pair_weight": 0.5916461916461917,
+      "block_auc": 0.8563877982482634,
+      "weighted_contribution": 0.5066785794058521
+    },
+    {
+      "target": "archived_proxy",
+      "positive_y": 0,
+      "positive_z": 1,
+      "negative_y": 1,
+      "negative_z": 0,
+      "pairs": 1001,
+      "pair_weight": 0.04471744471744472,
+      "block_auc": 0.6273726273726273,
+      "weighted_contribution": 0.02805450078177351
+    },
+    {
+      "target": "archived_proxy",
+      "positive_y": 1,
+      "positive_z": 1,
+      "negative_y": 0,
+      "negative_z": 0,
+      "pairs": 7568,
+      "pair_weight": 0.3380835380835381,
+      "block_auc": 0.8863636363636364,
+      "weighted_contribution": 0.29966495421040873
+    },
+    {
+      "target": "archived_proxy",
+      "positive_y": 1,
+      "positive_z": 1,
+      "negative_y": 1,
+      "negative_z": 0,
+      "pairs": 572,
+      "pair_weight": 0.025552825552825554,
+      "block_auc": 0.6783216783216783,
+      "weighted_contribution": 0.017333035514853698
+    }
+  ],
+  "verification": {
+    "direct_pair_rank_sklearn_agreement": true,
+    "all_permutation_counts_preserved": true,
+    "original_inputs_unchanged": true,
+    "exact_enumeration_with_ties": {
+      "enumerated_assignments": 9,
+      "analytic": 0.5370370370370369,
+      "enumerated_mean": 0.5370370370370371
+    }
+  }
+}

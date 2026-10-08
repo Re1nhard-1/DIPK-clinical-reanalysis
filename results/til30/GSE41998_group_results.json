@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-01",
+  "records": 122,
+  "candidate_groups": 118,
+  "repeated_groups": {
+    "A6432766": 3,
+    "A7347583": 3
+  },
+  "bootstrap_draws": 5000,
+  "seed": 202610012,
+  "estimates": [
+    {
+      "metric": "auc_AC",
+      "estimate": 0.670280612244898,
+      "lower": 0.5390607917274053,
+      "upper": 0.7958278762354545,
+      "defined_draws": 5000,
+      "undefined_draws": 0
+    },
+    {
+      "metric": "ap_AC",
+      "estimate": 0.3852457235874419,
+      "lower": 0.2287186891304611,
+      "upper": 0.579079564627671,
+      "defined_draws": 5000,
+      "undefined_draws": 0
+    },
+    {
+      "metric": "auc_pathology",
+      "estimate": 0.5240424937098127,
+      "lower": 0.41385971013138645,
+      "upper": 0.6304350786208204,
+      "defined_draws": 5000,
+      "undefined_draws": 0
+    },
+    {
+      "metric": "ap_pathology",
+      "estimate": 0.42680362889653684,
+      "lower": 0.31212640071516834,
+      "upper": 0.5765181281375039,
+      "defined_draws": 5000,
+      "undefined_draws": 0
+    },
+    {
+      "metric": "delta_auc",
+      "estimate": -0.14623811853508528,
+      "lower": -0.30291026583391695,
+      "upper": 0.007594630695177864,
+      "defined_draws": 5000,
+      "undefined_draws": 0
+    },
+    {
+      "metric": "delta_ap",
+      "estimate": 0.04155790530909492,
+      "lower": -0.1803177377660934,
+      "upper": 0.25785206564051716,
+      "defined_draws": 5000,
+      "undefined_draws": 0
+    }
+  ],
+  "verification": {
+    "five_explicit_replication_draws": true,
+    "saved_intervals_exact": true
+  },
+  "input_sha256": {
+    "method_screen\\TNBC_TIL\\analyse_specimen_groups.py": "14c165848075bb856a8817b80d855df85c9a677c29c3428448b041cd14d667dd",
+    "method_screen\\TNBC_TIL\\analyse_saved_outputs.py": "9b965852cc5207d21172599774a043cdfbcc0bd6bedc51e51cc8239bc33bc610",
+    "method_screen\\TNBC_TIL\\GSE41998_fixed_score_crosswalk.csv": "31aab29ec9e93b44dfc74c674e3f5b3e01be6790839b2a63a95470400792bacc",
+    "GSE41998_metadata.csv": "3002439d6a0eff7ee38e9b1a45d5420af3e0c4d0515c2a44d539a8501b1c344d"
+  }
+}

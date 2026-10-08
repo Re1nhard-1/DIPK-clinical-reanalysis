@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-01",
+  "repository_commit": "55cbe09820c7c679995630b65e682b1c98f4b869",
+  "GSE41998": {
+    "n": 122,
+    "AC_positive": 24,
+    "pathology_positive": 49,
+    "discordant": 43,
+    "bootstrap_seed": 202610011,
+    "bootstrap_draws": 5000,
+    "estimates": [
+      {
+        "metric": "auc_AC",
+        "estimate": 0.670280612244898,
+        "lower": 0.5369380144805624,
+        "upper": 0.7948460216759186,
+        "defined_draws": 5000,
+        "undefined_draws": 0
+      },
+      {
+        "metric": "ap_AC",
+        "estimate": 0.3852457235874419,
+        "lower": 0.2283577303233182,
+        "upper": 0.5710951667884199,
+        "defined_draws": 5000,
+        "undefined_draws": 0
+      },
+      {
+        "metric": "auc_pathology",
+        "estimate": 0.5240424937098127,
+        "lower": 0.41957986111111106,
+        "upper": 0.633479107274839,
+        "defined_draws": 5000,
+        "undefined_draws": 0
+      },
+      {
+        "metric": "ap_pathology",
+        "estimate": 0.42680362889653684,
+        "lower": 0.32485184092499136,
+        "upper": 0.5741206836172097,
+        "defined_draws": 5000,
+        "undefined_draws": 0
+      },
+      {
+        "metric": "delta_auc",
+        "estimate": -0.14623811853508528,
+        "lower": -0.30007637962661116,
+        "upper": 0.008192588927629607,
+        "defined_draws": 5000,
+        "undefined_draws": 0
+      },
+      {
+        "metric": "delta_ap",
+        "estimate": 0.04155790530909492,
+        "lower": -0.16250770770088913,
+        "upper": 0.24964842049295402,
+        "defined_draws": 5000,
+        "undefined_draws": 0
+      }
+    ],
+    "source_GSM_order_and_labels_verified": true,
+    "published_table1_n": 125
+  },
+  "GSE20194": {
+    "validation_records": 71,
+    "source_patients": 68,
+    "linked_records": 60,
+    "linked_source_patients": 57,
+    "unlinked_records": 11,
+    "unlinked_source_patients": 11,
+    "source_auc": 0.9547826086956521,
+    "notebook_auc_match_at_six_decimals": true,
+    "published_table2_auc": 0.96,
+    "direct_two_decimal_rounding_matches_table2": false
+  },
+  "verification": {
+    "pair_count_rank_and_sklearn_auc": true,
+    "tied_score_AP_vs_sklearn": true,
+    "five_draws_verified_by_patient_replication": true,
+    "raw_score_payload_vs_decoded_array_exact": true,
+    "source_notebook_numeric_agreement": true
+  },
+  "input_sha256": {
+    "analyse_saved_outputs.py": "9b965852cc5207d21172599774a043cdfbcc0bd6bedc51e51cc8239bc33bc610",
+    "GSE41998_source_outcomes.csv": "2f9da2ab9ab6ceef7988eb97a43368b8a59f67955644b6544815ce79b8295cae",
+    "GSE20194_input_identity.csv": "0c66e5bb7b43a73b988d4397eefa5d89fa1cdabe7e00a8302d31dd4d09a01647",
+    "train_input_identity.csv": "f29c9308a6d1337cc17e2bad39d9e2024491cf6ea92abfaaf5713f684824f4e2",
+    "GSE20194_links_to_training.csv": "6d4a8266e5494547a15ea0d014c63d800158de25bce980a76eb054261ee53f4b",
+    "source\\external_validation_11_test_set.ipynb": "f2d4ae23131f48f8cc1ed992730fe0771cba12b0978c17041d6ab1ab918438e3",
+    "saved_outputs\\y_probs_20194.pkl": "a043745a88a3d47ffcef054b796ef18a259690bbb9ea5d296c60705ab343a78e",
+    "saved_outputs\\y_probs_41998.pkl": "2482f5d578ab911a6c757fe571618dcdc27b71430e22fce858b905c4a665ae45",
+    "saved_outputs\\y_test_20194.pkl": "19512a0e51c7253a593e107e041e3b6e9eea17f6559b873d26cd71ec79c4a089",
+    "saved_outputs\\y_test_41998.pkl": "50db062af78e79eee6b5ab96e441dd7683d848ac8f18e97eebbf2169ea47f9e9"
+  }
+}
